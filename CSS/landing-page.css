@@ -5,7 +5,10 @@ SPACING SYSTEM (px)
 FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 */
-
+@font-face {
+  font-family: "Italian Plate No2";
+  src: url(/Fonts/ItalianPlateNo2-Medium.otf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -16,15 +19,95 @@ FONT SIZE SYSTEM (px)
 /* GENERAL STYLES */
 /* ------------------------ */
 body {
-  font-family: sans-serif;
+  font-family: "Italian Plate No2", sans-serif;
 }
 
 /* ------------------------ */
 /* COMPONENT STYLES */
 /* ------------------------ */
-
-/* HEADER */
-
+header {
+  background-image: url(/images/vivian-side-cake.png);
+  height: 10em;
+  background-repeat: no-repeat;
+  background-position: 20% 20%;
+  background-size: cover;
+  margin-bottom: 40px;
+  color: white;
+}
+nav {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav > a {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.logo > img {
+  width: 10%;
+}
+/* Vivian Story Section */
+.About-vivian {
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+}
+.About-vivian > h2 {
+  font-family: "Italian Plate No4";
+  font-style: normal;
+  font-weight: 600;
+  font-size: normal;
+  line-height: 1.5;
+  /* identical to box height, or 86% */
+  text-align: center;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #906f57;
+}
+.text-img-vivian {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5em;
+}
+.text-img-vivian > img {
+  width: 200%;
+  background-color: aqua;
+}
+.text-img-vivian > p {
+  width: 40em;
+  font-family: "Italian Plate No2";
+  font-style: normal;
+  font-weight: 400;
+}
+h2 {
+  font-family: "Italian Plate No4";
+  font-style: normal;
+  font-weight: 600;
+  font-size: normal;
+  line-height: 1.5;
+  /* identical to box height, or 86% */
+  text-align: center;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #906f57;
+}
+.Galery-slideshow {
+  background-color: aqua;
+}
 /* FEATURES */
 
-/* TESTIMONIAL */
+/* TESTIMONIAL */ ;
